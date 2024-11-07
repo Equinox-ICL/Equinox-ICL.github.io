@@ -7,14 +7,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
-    color: white;
+    background-color: #e7da5b;
+    color: #217ce4;
     height: 60px; /* Ensure a fixed height for vertical centering */
     z-index: 1;
 }
 
 .header .title {
-    color: white;
+    color: #217ce4;
     text-decoration: none;
     position: absolute; 
     left: 50%;
@@ -38,13 +38,13 @@
 .header .nav-buttons .menu-button {
     background: none;
     border: none;
-    color: white;
+    color: #217ce4;
     cursor: pointer;
     font-size: 24px; /* Adjust font size for better visibility */
 }
 
 .header .nav-buttons a {
-    color: white;
+    color: #217ce4;
     padding: 10px 15px;
     text-decoration: none; /* Remove underline from nav links */
     opacity: 0;
@@ -72,13 +72,13 @@
 }
 
 .header .nav-buttons a:hover {
-    background-color: #0b0b0b;
+    background-color: #e7da5b;
 }
 
 .header .nav-buttons #dropdown-menu {
     display: none;
     flex-direction: column;
-    background-color: #0b0b0b;
+    background-color: #e7da5b;
     position: absolute;
     top: 50px;
     right: 20px;
@@ -88,7 +88,7 @@
 }
 
 .header .nav-buttons #dropdown-menu a {
-    color: white;
+    color: #217ce4;
     padding: 10px 15px;
     text-decoration: none;
     display: block;
@@ -96,7 +96,7 @@
 }
 
 .header .nav-buttons #dropdown-menu a:hover {
-    background-color: #0b0b0b;
+    background-color: #e7da5b;
 }
 
 @media screen and (max-width: 768px) {

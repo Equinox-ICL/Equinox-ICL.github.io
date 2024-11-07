@@ -1,7 +1,7 @@
 
 .footer {
-    background-color: black;
-    color: #F8F8F8;
+    background-color: #e7da5b;
+    color: #217ce4;
     padding: 20px;
     display: flex;
     justify-content: center; /* Center the footer content */
@@ -10,7 +10,7 @@
 .footer .container {
     display: flex;
     justify-content: space-between;
-    width: 50%; /* 50% for the columns (16.6% each) and 25% free space on each side */
+    width: 70%; /* 50% for the columns (16.6% each) and 25% free space on each side */
 }
 
 .footer .column {

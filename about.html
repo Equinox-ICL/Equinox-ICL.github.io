@@ -4,56 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About E.quinox</title>
-    <link rel="stylesheet" href="static/header.css">
+    <link rel="stylesheet" href="static/css/header.css">
+    <link rel="stylesheet" href="static/css/footer.css">
     <script src="static/toggleMenu.js"></script>
-    <link rel="stylesheet" href="static/about.css">
+    <link rel="stylesheet" href="static/css/about.css">
+
+    <script src="static/js/include.js"></script>
+    <script src="static/js/toggleMenu.js"></script>
 
     <link rel="apple-touch-icon" sizes="180x180" href="static/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="static/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="static/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="static/favicon_io/site.webmanifest">
 
-    <div data-include-html="font.html"></div>
+    <div data-include-html="static/auxhtml/font.html"></div>
 </head>
 <body>
-    <div data-include-html="header.html"></div>
+    <div data-include-html="static/auxhtml/header.html"></div>
     <div class="content">
+        <div class="left">
+            <img class="about-image" src="static/images/about.jpg"> 
+        </div>
+        <div class="right">
+            E.quinox is a student-led humanitarian organisation at Imperial College London with the objective of uplifting rural Rwandan communities through research and technological innovation. <br><br>
+            Comprising of students from diverse backgrounds and courses, we embrace our collaborative roots and combined skillset to create sustainable and affordable solutions to some of the poorest communities in the world.
+        
+            <br>
+            Riccardo Casonato <br>
+            CSP Chair
+
+            <br> <br>
+            Eloise Pearce <br>
+            SECRETARY
+
+            <br><br>
+            Ashil Shah <br>
+            CSP TREASURER
+        </div>
         <br>
-        E.quinox is a student-led humanitarian organisation at Imperial College London with the objective of uplifting rural Rwandan communities through research and technological innovation. <br><br>
-        Comprising of students from diverse backgrounds and courses, we embrace our collaborative roots and combined skillset to create sustainable and affordable solutions to some of the poorest communities in the world.
-        <img class="about-image" src="static/images/about.jpg"> 
-        <br>
-        Riccardo Casonato <br>
-        CSP Chair
-
-        <br> <br>
-        Eloise Pearce <br>
-        SECRETARY
-
-        <br><br>
-        Ashil Shah <br>
-        CSP TREASURER
-
-        <br><br>
-        Gaspard Bouchard <br>
-        LEGEND 
     </div>
-    <div data-include-html="footer.html"></div>
-    <script src="static/include.js"></script>
-    <script src="scripts.js"></script>
-    <script src="static/toggleMenu.js"></script>
-
-    <style type="stylesheet" src="static/header.css"></style>
-
-    <script>
-    function toggleMenu() {
-        const menu = document.getElementById('dropdown-menu');
-        if (menu.style.display === 'flex') {
-            menu.style.display = 'none';
-        } else {
-            menu.style.display = 'flex';
-        }
-    }
-    </script>
+    <div data-include-html="static/auxhtml/footer.html"></div>
 </body>
 </html>
