@@ -7,14 +7,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #e7da5b;
+    background-color: #e7c600;
     color: #217ce4;
     height: 60px; /* Ensure a fixed height for vertical centering */
     z-index: 1;
 }
 
 .header .title {
-    color: #217ce4;
+    color: #006b00;
     text-decoration: none;
     position: absolute; 
     left: 50%;
