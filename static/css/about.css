@@ -8,6 +8,7 @@ body, html {
     background-color: rgba(33, 125, 110, 1);
     color: black;
 }
+
 body {
     overflow-y: scroll; /* Enable vertical scrolling if necessary */
     overscroll-behavior: contain; /* Prevent overscroll behavior */
@@ -76,5 +77,5 @@ body {
     font-family: "MedievalSharp", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
-    font-style: normal
+    font-style: normal;
 }
