@@ -1,4 +1,8 @@
 
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
 .footer {
     background-color: #217c6d;
     color: #fffbe0;
@@ -54,18 +58,4 @@ a {
 
 a:hover {
     color: lightgray;
-}
-
-.jost {
-    font-family: "Jost", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal
-}
-
-.jost-light {
-    font-family: "Jost", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal
 }

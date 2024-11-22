@@ -1,0 +1,50 @@
+.yellow {
+   color: #ffcf6d;
+}
+
+.yellowbg {
+    background-color: #ffcf6d;
+}
+
+.green {
+    color: #0b2600;
+}
+
+.greenbg {
+    background-color: #0b2600;
+}
+
+.rust {
+    color: #c65200;
+}
+
+.rustbg {
+    background-color: #c65200;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal
+}
+
+
+.weight400 {
+    font-weight: 400;
+}
+
+.weight300 {
+    font-weight: 300;
+}
+
+.font28 {
+    font-size: 28px;
+}
+
+.font24 {
+    font-size: 24px;
+}
+
+.font36 {
+    font-size: 36;
+}

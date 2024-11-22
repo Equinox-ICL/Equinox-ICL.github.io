@@ -1,0 +1,28 @@
+:root {
+    --headerHeight: "20px";
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    padding : 0;
+    margin: 0;
+}
+
+.bodyDiv {
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 100% 50%;;
+    height: 100vh;
+}
+
+.landingDiv {
+    border: 1px solid red;
+    width: 100vw;
+    height: calc(100vh-var(--headerHeight));
+}
+
+.contentDiv {
+    border: 1px solid blue;
+    border-radius: 10px solid blue;
+    background-color: yellow;
+}
