@@ -5,7 +5,6 @@ function sleep(ms) {
 async function highlightMenu() {
     const menu = document.getElementById("headerList");
     for (const child of menu.children) {
-        console.log(window.location.pathname)
         if(window.location.pathname == "/" &&  child.name == "home"){
             child.classList.add("rust")
             break
