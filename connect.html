@@ -3,36 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="static/css/connect.css">
-    <script src="static/toggleMenu.js"></script>
-    <link rel="stylesheet" href="static/css/header.css">
-    <link rel="stylesheet" href="static/css/footer.css">
+    <title>Connect with e.quinox</title>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="static/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="static/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="static/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="static/favicon_io/site.webmanifest">
-
-    <div data-include-html="static/auxhtml/font.html"></div>
-</head>
-<body>
+        <!-- CSS Files -->
+        <link rel="stylesheet" href="static/auxcss/header.css">
+        <link rel="stylesheet" href="static/auxcss/helper.css">
+        <link rel="stylesheet" href="static/css/connect.css">
+    
+        <!-- JS Files -->
+        <script src="static/js/include.js"></script>
+        <script src="static/js/toggleMenu.js"></script>
+    
+        <!-- Icons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="static/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="static/favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="static/favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="static/favicon_io/site.webmanifest">
+    
+        <!-- Auxiliary HTML -->
+        <div data-include-html="static/auxhtml/font.html"></div>
+    </head>
+<body class = "yellow greenbg">
     <div data-include-html="static/auxhtml/header.html"></div>
     <div class="connect-container">
-        <div class="left-column">
-            <video class="backgroundImg" autoplay loop muted>
-                <source src="static/videos/breathe.mp4" type="video/mp4">
-                ☹ Your browser does not support the video tag. ☹ <br> 
-                        See our art in person instead?
-            </video>
-           <!---
-            <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-            <div class="elfsight-app-f3e3f202-4ef3-480c-beab-443628304b7b" data-elfsight-app-lazy></div>
-           --> 
-        
+        <div class="column">
+            <image class="backgroundImg" src="static/images/slideshow/img4.png">
         </div>
-        <div class="right-column">
-          <div class="form-container">    
+        <div class="column">    
             <form action="https://api.staticforms.xyz/submit" method="post">
                 <!--- Set up form account -->
                 <input type="hidden" name="accessKey" value="3be223fa-aa8e-42dc-82ba-1f130932580a">
@@ -53,14 +50,10 @@
                     <textarea id="details" name="$details" rows="5" required></textarea>
                 </div>
                 <input type="text" name="honeypot" style="display:none">
-                <button type="submit">Submit</button>
+                <button class="yellowbg rust font24" type="submit">Submit</button>
                 <input type="hidden" name="redirectTo" value="https://equinox-icl.github.io">
             </form>
-          </div>
         </div>
     </div>
-    <div data-include-html="static/auxhtml/footer.html"></div>
-    <script src="static/js/include.js"></script>
-    <script src="static/js/toggleMenu.js"></script>
 </body>
 </html>

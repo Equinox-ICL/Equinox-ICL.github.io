@@ -14,9 +14,8 @@ body {
 
 .topContainer {
     display: grid;
-    grid-template-columns: 67% 33%;
     justify-content: center;
-    height: fit-content; /* TODO Change to 100vh-(x)px to cover landing page, or something else!*/
+    height: fit-content; 
     padding-top: 2%;
 }
 
@@ -26,35 +25,41 @@ body {
     height: auto;
     top: auto;
     bottom: auto;
+    padding: 3%;
 }
 
-.left {
-    padding-left: 3%;
-    padding-right: 5%;
+.image {
     height: fit-content;
 }
 
-.right {
+.description {
+    text-align: center;
+    border-radius: 20px;
+    width: 80%;
+    margin-left: 5%;
     box-shadow: 0.5, 0.7, 0.2, 1.2;
-    outline: 7px solid #c2b284;
-    border-radius: 5px;
-    width: 75%;
     padding: 5%;
-    font-size: 32px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .committeeContainer {
-    padding-top: 50px;
     display: grid;
     grid-template-columns: 33% 34% 33%;
 }
 
 .person {
     text-align:center;
-    font-size: 36px;
 }
 
-@media screen and (max-width: 768px) {
+.personImg {
+    width: 80%;
+    padding: 10%;
+    position: relative;
+
+}
+
+@media screen {
     .content {
         font-size: 14px;
         height: fit-content;
@@ -66,4 +71,14 @@ body {
         left: 50%;
         transform: translateX(-50%);
     }
+    .topContainer {
+        grid-template-rows: auto auto auto;
+    }
 }
+/*
+@media screen and (min-width: 769px){
+    .topContainer {
+        grid-template-columns: 67% 33%;
+    }
+}
+*/

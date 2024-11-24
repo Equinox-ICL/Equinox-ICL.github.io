@@ -18,13 +18,6 @@
     right: 0;
 }
 
-.header .nav-buttons .menu-mobile {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 24px; /* Adjust font size for better visibility */
-}
-
 .header .nav-buttons a {
     padding: 10px 15px;
     text-decoration: none; /* Remove underline from nav links */
@@ -43,6 +36,10 @@
 
 .header .nav-buttons a:nth-child(3) {
     animation-delay: 0.3s;
+}
+
+.header .nav-buttons a:nth-child(4) {
+    animation-delay: 0.4s;
 }
 
 @keyframes slideIn {
@@ -67,40 +64,6 @@
     text-decoration: none;
     display: block;
     text-align: right;
-}
-
-@media screen and (max-width: 768px) {
-    .desktop-nav {
-        display: none; /* Hide desktop navigation on mobile devices */
-    }
-    .mobile-nav {
-        display: flex; /* Show mobile navigation on mobile devices */
-    }
-
-    .header .nav-buttons button {
-        display: block; /* Show the button on mobile devices */
-    }
-    .header .nav-buttons a {
-        display: none; /* Hide the normal links on mobile devices */
-    }
-    .header .nav-buttons .dropdown-menu a {
-        display: block; /* Hide the dropdown on desktop devices */
-    }
-}
-
-@media screen and (min-width: 769px) {
-    .desktop-nav {
-        display: flex; /* Show desktop navigation on mobile devices */
-    }
-    .mobile-nav {
-        display: none; /* Hide mobile navigation on desktop devices */
-    }
-    .header .nav-buttons button {
-        display: none; /* Hide the button on desktop devices */
-    }
-    .header .nav-buttons #dropdown-menu a {
-        display: none; /* Hide the dropdown on desktop devices */
-    }
 }
 
 /* Hide scrollbars on all elements */
