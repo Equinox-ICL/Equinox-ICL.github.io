@@ -3,7 +3,6 @@ function sleep(ms) {
 }
 
 async function highlightMenu() {
-    await sleep(100);
     const menu = document.getElementById("headerList");
     for (const child of menu.children) {
         console.log(window.location.pathname)
@@ -18,4 +17,4 @@ async function highlightMenu() {
     }
     
 }
-document.addEventListener('DOMContentLoaded', highlightMenu);
+window.onload(highlightMenu);
