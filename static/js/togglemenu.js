@@ -17,4 +17,4 @@ async function highlightMenu() {
     }
     
 }
-window.onload(highlightMenu);
+window.onload = highlightMenu;
