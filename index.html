@@ -24,21 +24,17 @@
         <div class="landingDiv rustbg"  style="border-bottom: 5px dashed rgb(10, 60, 77)">
             YOOOO
         </div>
-<<<<<<< HEAD
-        <div class="contentDiv greenbg" style="border-bottom: 5px dashed rgb(10, 60, 77); border-top: 5px dashed rgb(10, 60, 77)" data-include-html="/about.html"></div>
-=======
         <div class="contentDiv greenbg" data-include-html="/about.html"></div>
         <div class="yellowbg">
             content
         </div>
->>>>>>> main
     </div>
 
 </body>
 <script src="static/js/include.js"></script>
 <script>
     setTimeout(() => {
-            if (window.location.pathname == "/") {
+            if ((window.location.pathname == "/") || (window.location.pathname.includes("index"))) {
                 var header = document.querySelector(".header1")
                 header.classList.remove("yellow")
                 header.classList.add("yellowHover")
