@@ -20,9 +20,3 @@ body {
     width: 100vw;
     height: calc(100vh-var(--headerHeight));
 }
-
-.contentDiv {
-    border: 1px solid blue;
-    border-radius: 10px solid blue;
-    background-color: yellow;
-}

@@ -1,17 +1,3 @@
-html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-}
-
-body {
-    overflow-y: scroll; /* Enable vertical scrolling if necessary */
-    overscroll-behavior: contain; /* Prevent overscroll behavior */
-    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
-}
-
 .topContainer {
     display: grid;
     justify-content: center;
