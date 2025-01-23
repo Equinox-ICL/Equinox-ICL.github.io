@@ -53,6 +53,14 @@
     </div>
     <!-- JS Files -->
     <script src="static/js/include.js"></script>
-    <script src="static/js/togglemenu.js"></script>
+    <script>
+        setTimeout(() => {
+            if (window.location.pathname.includes("/connect")) {
+                var header = document.querySelector(".header3")
+                header.classList.remove("yellow")
+                header.classList.add("yellowHover")
+            }
+        }, 1000)
+    </script>
 </body>
 </html>

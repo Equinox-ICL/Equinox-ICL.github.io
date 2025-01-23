@@ -27,6 +27,14 @@
     <!-- JS Files -->
     <script src="static/js/include.js"></script>
     <script src="static/js/generateProjects.js"></script>
-    <script src="static/js/togglemenu.js"></script>
+    <script>
+        setTimeout(() => {
+            if (window.location.pathname.includes("/projects")) {
+                var header = document.querySelector(".header2")
+                header.classList.remove("yellow")
+                header.classList.add("yellowHover")
+            }
+        }, 1000)
+    </script>
 </body>
 </html>

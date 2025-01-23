@@ -15,8 +15,7 @@ body {
     height: 100vh;
 }
 
-.landingDiv {
-    border: 1px solid red;
-    width: 100vw;
-    height: calc(100vh-var(--headerHeight));
+.contentDiv {
+    background: linear-gradient(to bottom, #0b2600 40%, #ffcf6d 40%);
+    height: fit-content;
 }

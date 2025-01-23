@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>e.quinox</title>
     
         <link rel="apple-touch-icon" sizes="180x180" href="static/favicon_io/apple-touch-icon.png">
@@ -19,15 +19,23 @@
     </head>
 
 <body class="green yellowbg">
-    <div data-include-html="static/auxhtml/header.html"></div>
+    <div class="yellow greenbg" data-include-html="static/auxhtml/header.html"></div>
     <div class="bodyDiv">
-        <div class="landingDiv">
+        <div class="landingDiv rustbg"  style="border-bottom: 5px dashed rgb(10, 60, 77)">
             YOOOO
         </div>
-        <div class="contentDiv greenbg" data-include-html="/about.html"></div>
+        <div class="contentDiv greenbg" style="border-bottom: 5px dashed rgb(10, 60, 77); border-top: 5px dashed rgb(10, 60, 77)" data-include-html="/about.html"></div>
     </div>
 
 </body>
-<script src="static/js/togglemenu.js"></script>
 <script src="static/js/include.js"></script>
+<script>
+    setTimeout(() => {
+            if (window.location.pathname == "/") {
+                var header = document.querySelector(".header1")
+                header.classList.remove("yellow")
+                header.classList.add("yellowHover")
+            }
+    }, 1000)
+</script>
 </html>

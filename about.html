@@ -21,7 +21,6 @@
 </head>
 
 <body class = "yellow greenbg">
-    <div data-include-html="static/auxhtml/header.html"></div>
 
     <div class="content">
         <div class="topContainer">
@@ -57,5 +56,12 @@
     <!-- JS Files -->
     <script src="static/js/include.js"></script>
     <script src="static/js/togglemenu.js"></script>
+    <script>
+        if (window.location.pathname.includes("/about")) {
+            var header = document.querySelector(".header1")
+            header.classList.remove("yellow")
+            header.classList.add("yellowHover")
+        }
+    </script>
     </body>
 </html>
