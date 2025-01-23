@@ -6,8 +6,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 20px; /* Ensure a fixed height for vertical centering */
+    height: auto; /* Ensure a fixed height for vertical centering */
     z-index: 1;
+    height: 35px;
 }
 
 .header .nav-buttons {
@@ -24,6 +25,10 @@
     opacity: 0;
     transform: translateX(100%);
     animation: slideIn 0.5s forwards;
+    top: 10px;
+    position: relative;
+    height: fit-content;
+    display: inline;
 }
 
 .header .nav-buttons a:nth-child(1) {

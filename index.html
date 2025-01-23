@@ -19,18 +19,25 @@
     </head>
 
 <body class="green yellowbg">
-    <div data-include-html="static/auxhtml/header.html"></div>
     <div class="bodyDiv">
         <div class="landingDiv">
+            <div data-include-html="static/auxhtml/header.html"></div>
+            <hr>
             <img src="/static/images/Logo/Logo Rust.svg" class = "logo">
         </div>
         <div class="contentDiv greenbg" data-include-html="/about.html"></div>
-        <div class="yellowbg">
-            content
-        </div>
     </div>
 
 </body>
-<script src="static/js/togglemenu.js"></script>
+<!-- JS Files -->
 <script src="static/js/include.js"></script>
+<script>
+    setTimeout(() => {
+            if ((window.location.pathname == "/") || (window.location.pathname.includes("index"))) {
+                var header = document.querySelector(".header1")
+                header.classList.remove("rust")
+                header.classList.add("yellowHover")
+            }
+    }, 1000)
+</script>
 </html>

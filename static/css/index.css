@@ -16,13 +16,13 @@ body {
 }
 
 .landingDiv {
-    border: 1px solid red;
     width: 100vw;
     height: calc(100vh-var(--headerHeight));
     background-image: url("/static/images/landing.jpg");
     background-attachment: fixed;
     background-size: 100% 140%;
     background-position: 0% 80%;
+    background-size: cover;
 }
 
 .logo{
@@ -34,3 +34,7 @@ body {
     width: 60%;
     margin-right: auto;
 }
+
+hr.solid {
+    border-top: 5px dashed #bbb;
+  }
