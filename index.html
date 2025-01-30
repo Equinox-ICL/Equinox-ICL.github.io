@@ -31,6 +31,9 @@
 <!-- JS Files -->
 <script src="static/js/include.js"></script>
 <script>
+    window.addEventListener("load", function() {
+        document.querySelector(".landingDiv").classList.add("loaded");
+    });
     setTimeout(() => {
             if (window.location.pathname == "/" || window.location.pathname.includes("/index")) {
                 var header = document.querySelector(".header1")

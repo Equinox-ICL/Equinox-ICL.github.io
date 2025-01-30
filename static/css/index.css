@@ -18,11 +18,15 @@ body {
 .landingDiv {
     width: 100vw;
     height: calc(100vh-var(--headerHeight));
+}
+
+.landingDiv.loaded {
     background-image: url("/static/images/landing.jpg");
     background-attachment: fixed;
     background-size: 100% 140%;
     background-position: 0% 80%;
     background-size: cover;
+    transition: background-image 0.5s ease-in-out; /* Smooth transition */
 }
 
 .logo{
