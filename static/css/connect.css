@@ -1,4 +1,4 @@
-html {
+html {    
     margin: 0;
     padding: 0;
     width: 100%;
@@ -14,14 +14,13 @@ body {
 
 .column {
     width: 90%;
-    padding: 5%;
+    padding: 2% 5%;
     align-items: center; /* Center vertically */
     justify-content: center; /* Optional: Center horizontally */
     vertical-align: middle;
     height: fit-content;
     position: relative;
     margin: auto;
-    border: 1px solid red;
 }
 
 .backgroundImg {

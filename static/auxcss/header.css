@@ -5,6 +5,7 @@
     align-items: flex-end;
     padding: 0px 30px;
     z-index: 1;
+    width: calc(var(100%) - 30px);
     height: fit-content; /* Ensure a fixed height for vertical centering */
 }
 
