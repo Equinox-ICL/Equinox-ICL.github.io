@@ -21,7 +21,9 @@
 .rust {
     color: #c65200;
 }
-
+.darkrust {
+    color: #963200
+}
 .rustbg {
     background-color: #c65200;
 }

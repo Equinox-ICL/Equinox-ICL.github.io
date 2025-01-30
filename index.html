@@ -32,11 +32,11 @@
 <script src="static/js/include.js"></script>
 <script>
     setTimeout(() => {
-            if ((window.location.pathname == "/") || (window.location.pathname.includes("index"))) {
+            if (window.location.pathname == "/" || window.location.pathname.includes("/index")) {
                 var header = document.querySelector(".header1")
                 header.classList.remove("rust")
-                header.classList.add("yellowHover")
+                header.classList.add("darkrust")
             }
-    }, 1000)
+        }, 1000)
 </script>
 </html>
