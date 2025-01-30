@@ -37,6 +37,10 @@ body {
     left: 20%;
     width: 60%;
     margin-right: auto;
+    z-index: 1;
+}
+.contentDiv{
+    z-index:2;
 }
 
 hr.solid {

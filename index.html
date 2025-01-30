@@ -41,5 +41,14 @@
                 header.classList.add("darkrust")
             }
         }, 1000)
+
+    window.addEventListener("scroll", () => {
+        requestAnimationFrame(() => {
+            let scrollPosition = window.scrollY; 
+            document.querySelector(".logo").style.transform = `translateY(-${scrollPosition * 0.2}px)`;
+            document.querySelector(".landingDiv").style.transform = `translateY(${scrollPosition * 0.98}px)`;
+            document.querySelector(".header").style.transform = `translateY(${scrollPosition * 0.02}px)`;
+        });
+    });
 </script>
 </html>
