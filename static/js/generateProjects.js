@@ -16,14 +16,15 @@ function processCSV(data) {
 
 function generateMainContent(projects) {
     const mainContent = document.getElementById('contentDiv');
-    const gridContainer = document.createElement('div');
+    const gridContainer = document.createElement('ul');
     gridContainer.className = 'gridContainer';
 
     projects.forEach(project => {
-        const gridItem = document.createElement('div');
+        const gridItem = document.createElement('li');
         gridItem.className = 'gridItem';
 
         const descBox = document.createElement('descBox');
+
 
         const name = document.createElement('p');
         name.className = 'font28';
