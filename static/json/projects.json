@@ -1,0 +1,20 @@
+[
+{
+    "title":"Energy Kiosk",
+    "year":"2009",
+    "description":"Lorem ipsum",
+    "img":"static/images/slideshow/img1.png"
+},
+{
+    "title":"Home Lighting",
+    "year":"2013",
+    "description":"Lorem Ipsum",
+    "img":"static/images/slideshow/img2.png"
+},
+{
+    "title":"Recon",
+    "year":"2024",
+    "description":"We recently visited Minazi on a reconnaisance to gauge interest in our selection of projects and determine which direction would be best to go next from an objective standpoint.",
+    "img":"static/images/slideshow/img4.png"
+}
+]

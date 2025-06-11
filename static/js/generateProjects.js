@@ -1,50 +1,17 @@
-document.addEventListener('DOMContentLoaded', function() {
-    fetch('static//csv/projects.csv')
-        .then(response => response.text())
-        .then(data => processCSV(data));
-});
-
-function processCSV(data) {
-    const rows = data.split('\n');
-    const projects = rows.map(row => {
-        const [name, image, year, description] = row.split(',');
-        return { name, image, year, description };
+fetch("static/json/projects.json")
+.then(response => response.json())
+.then(data => {
+    const container = document.getElementById("contentDiv");
+    console.log(data)
+    data.forEach(project => {
+        const div = document.createElement("div");
+        div.classList.add("project");
+        div.innerHTML = `
+            <h2>${project.title}</h2>
+            <p>${project.description}</p>
+            <small>${project.year}</small>
+        `;
+        container.appendChild(div);
     });
-
-    generateMainContent(projects);
-}
-
-function generateMainContent(projects) {
-    const mainContent = document.getElementById('contentDiv');
-    const gridContainer = document.createElement('div');
-    gridContainer.className = 'gridContainer';
-
-    projects.forEach(project => {
-        const gridItem = document.createElement('div');
-        gridItem.className = 'gridItem';
-
-        const descBox = document.createElement('descBox');
-
-        const name = document.createElement('p');
-        name.className = 'font28';
-        name.textContent = project.name;
-
-        const description = document.createElement('p');
-        description.className = 'description font14';
-        description.textContent = project.description;
-
-        const img = document.createElement('img');
-        img.src = project.image;
-        img.alt = project.name;
-
-        descBox.appendChild(name);
-        descBox.appendChild(description);
-
-        gridItem.appendChild(descBox);
-        gridItem.appendChild(img);
-
-        gridContainer.appendChild(gridItem);
-    });
-
-    mainContent.appendChild(gridContainer);
-}
+})
+.catch(error => console.error("Error loading JSON:", error));

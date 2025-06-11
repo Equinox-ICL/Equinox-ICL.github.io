@@ -1,0 +1,17 @@
+.titleBox{
+    background-color: chocolate;
+}
+
+.boxContainer{
+    background-color: aliceblue;
+}
+
+.textBox{
+    flex: 1;
+    background-color: pink;
+}
+
+.imageBox{
+    flex: 1;
+    background-color: aquamarine;
+}
