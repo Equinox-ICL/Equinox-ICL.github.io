@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('static//csv/projects.csv')
+    fetch('static/json/projects.csv')
         .then(response => response.text())
         .then(data => processCSV(data));
 });
@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function processCSV(data) {
     const rows = data.split('\n');
     const projects = rows.map(row => {
-        const [name, image, year, description] = row.split(',');
+        const [name, year, description, image] = row.split(',');
         return { name, image, year, description };
     });
 
@@ -18,7 +18,7 @@ function generateMainContent(projects) {
     const mainContent = document.getElementById('contentDiv');
     const gridContainer = document.createElement('ul');
     gridContainer.className = 'gridContainer';
-
+    console.log(projects);
     projects.forEach(project => {
         const gridItem = document.createElement('li');
         gridItem.className = 'gridItem';
@@ -29,6 +29,9 @@ function generateMainContent(projects) {
         const name = document.createElement('p');
         name.className = 'font28';
         name.textContent = project.name;
+        const year = document.createElement('p');
+        year.className = 'font14';
+        year.textContent = project.year;
 
         const description = document.createElement('p');
         description.className = 'description font14';
@@ -39,6 +42,7 @@ function generateMainContent(projects) {
         img.alt = project.name;
 
         descBox.appendChild(name);
+        descBox.appendChild(year);
         descBox.appendChild(description);
 
         gridItem.appendChild(descBox);
@@ -46,5 +50,5 @@ function generateMainContent(projects) {
 
         gridContainer.appendChild(gridItem);
     });
-})
-.catch(error => console.error("Error loading JSON:", error));
+    mainContent.appendChild(gridContainer);
+}

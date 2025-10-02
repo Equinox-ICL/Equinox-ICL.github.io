@@ -1,63 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About e.quinox</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About e.quinox</title>
 
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="static/auxcss/header.css">
-    <link rel="stylesheet" href="static/auxcss/helper.css">
-    <link rel="stylesheet" href="static/css/about.css">
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="static/auxcss/header.css">
+  <link rel="stylesheet" href="static/auxcss/helper.css">
+  <link rel="stylesheet" href="static/css/about.css">
 
-    <!-- Icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="static/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="static/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="static/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="static/favicon_io/site.webmanifest">
+  <!-- Icons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="static/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="static/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="static/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="static/favicon_io/site.webmanifest">
 
-    <!-- Auxiliary HTML -->
-    <div data-include-html="static/auxhtml/font.html"></div>
+  <!-- Auxiliary HTML -->
+  <div data-include-html="static/auxhtml/font.html"></div>
 </head>
 
-<body class = "green yellowbg">
-    <div data-include-html="static/auxhtml/header.html"></div>
+<body class="green yellowbg">
+  <header data-include-html="static/auxhtml/header.html"></header>
 
-    <div class="content yellow greenbg">
-        <div class="topContainer">
-            <div class="description">
-                <p class="topPara font24"> 
-                    e.quinox is a student-led humanitarian organisation at Imperial College London with the objective of uplifting rural Rwandan communities through research and technological innovation.
-                </p>
-                <p class="bottomPara font20">
-                    Comprising of students from diverse backgrounds and courses, we embrace our collaborative roots and combined skillset to create sustainable and affordable solutions to some of the poorest communities in the world.
-                </p>
-            </div>
-            <div class="image">
-                <img class="about-image" src="static/images/about.jpg"> 
-            </div>
-        </div>
-        <br>
-        <div class="committeeContainer">
-            <div class="yellow person font28">
-                <image class="personImg" src="static/images/pres.png"></image>
-                Riccardo Casonato <br>
-                CSP Chair
-            </div>
-            <div class="yellow person font28">
-                <image class="personImg" src="static/images/pres.png"></image>
-                Eloise Pearce <br>
-                Secretary
-            </div>
-            <div class="yellow person font28">
-                <image class="personImg" src="static/images/pres.png"></image>
-                Ashil Shah <br>
-                CSP Treasurer
-            </div>
-        </div>
-    </div>
-    <!-- JS Files -->
-    <script src="static/js/include.js"></script>
-    <script src="static/js/togglemenu.js"></script>
-    </body>
+  <main class="content yellow greenbg">
+
+    <!-- Intro Section -->
+    <section class="topContainer">
+      <article class="description">
+        <p class="topPara font24"> 
+          e.quinox is a student-led humanitarian organisation with the objective of uplifting rural Rwandan communities through sustainable, self-sufficient and scalable solutions.
+        </p>
+        <p class="bottomPara font20" style="color:yellowgreen">
+We bridge the gap between NGOs and industrial practice, fostering collaboration in the fields of sustainable energy and international development. 
+</p>
+<p class="bottomPara font16">
+Through first-hand work with the people of Rwanda, we understand the wants and needs of the locals and how we can work together to advance their lifestyle. This is how we have successfully developed and delivered several lasting projects on the ground for 15 years.     
+</p>
+      </article>
+      <figure class="image">
+        <img class="about-image" src="static/images/about.jpg" alt="e.quinox team in Rwanda"> 
+      </figure>
+    </section>
+
+    <!-- Expeditions Section -->
+
+    <!-- Impact Section -->
+    <section class="impactContainer">
+      <header>
+        <h2 class="impact font40 yellow">Our Impact</h2>
+        <h3 class="impactDesc font20 yellow weight400">
+          Since the very first day of e.quinox, we have been proud to have been part of the ideation of many accomplished projects. Some of which have been able to launch as successful commercial companies, with e.quinox as a necessary platform.
+        </h3>
+      </header>
+
+      <section class="projectsContainer">
+
+        <article class="yellow project font28">
+          <figure>
+            <img class="projectImg" src="static/images/bboxx.png" alt="Bboxx logo">
+          </figure>
+          <p>Bboxx</p>
+          <p class="font14">Democratising Energy</p>
+        </article>
+
+        <article class="yellow project font28">
+          <figure>
+            <img class="projectImg" src="static/images/mesh.png" alt="MeshPower logo">
+          </figure>
+          <p>MeshPower</p>
+          <p class="font14">Solar Power Solutions</p>
+        </article>
+
+        <article class="yellow project font28">
+          <figure>
+            <img class="projectImg" src="static/images/minazi.png" alt="Minazi Consulting logo">
+          </figure>
+          <p>Minazi Consulting</p>
+          <p class="font14">Tackling gender inequality</p>
+        </article>
+
+      </section>
+    </section>
+
+  </main>
+
+  <!-- JS Files -->
+  <script src="static/js/include.js"></script>
+  <script src="static/js/togglemenu.js"></script>
+</body>
 </html>
