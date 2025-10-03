@@ -1,49 +1,45 @@
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('static/json/projects.csv')
-        .then(response => response.text())
-        .then(data => processCSV(data));
+    fetch('static/json/projects.json')
+        .then(response => response.json())
+        .then(data => processJSON(data));
 });
 
-function processCSV(data) {
-    const rows = data.split('\n');
-    const projects = rows.map(row => {
-        const [name, year, description, image] = row.split(',');
-        return { name, image, year, description };
-    });
-
-    generateMainContent(projects);
+function processJSON(data) {
+    generateMainContent(data);
 }
-
 function generateMainContent(projects) {
     const mainContent = document.getElementById('contentDiv');
     const gridContainer = document.createElement('ul');
     gridContainer.className = 'gridContainer';
-    console.log(projects);
     projects.forEach(project => {
         const gridItem = document.createElement('li');
         gridItem.className = 'gridItem';
 
         const descBox = document.createElement('descBox');
 
-
         const name = document.createElement('p');
-        name.className = 'font28';
-        name.textContent = project.name;
-        const year = document.createElement('p');
-        year.className = 'font14';
-        year.textContent = project.year;
+        name.className = 'font28 title';
+        name.textContent = project.title;
+        // const year = document.createElement('p');
+        // year.className = 'font20 year';
+        // year.textContent = project.year;
 
         const description = document.createElement('p');
         description.className = 'description font14';
         description.textContent = project.description;
 
+        const description2 = document.createElement('p');
+        description2.className = 'description font14';
+        description2.textContent = project.description2;
+
         const img = document.createElement('img');
         img.src = project.image;
-        img.alt = project.name;
+        img.alt = project.title;
 
         descBox.appendChild(name);
-        descBox.appendChild(year);
+        // descBox.appendChild(year);
         descBox.appendChild(description);
+        descBox.appendChild(description2);
 
         gridItem.appendChild(descBox);
         gridItem.appendChild(img);
