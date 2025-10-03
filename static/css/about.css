@@ -3,7 +3,7 @@
     justify-content: center;
     height: fit-content; 
     padding-top: 2%;
-    align-items: stretch;
+    align-items: center;
 }
 
 .about-image {
@@ -14,14 +14,16 @@
 }
 
 .image {
-    height: 100%;
+    height: auto;
     vertical-align: middle;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 2%;
 }
 
 .description {
+    vertical-align: middle;
     text-align: center;
     width: 80%;
     margin-left: 50%;
@@ -40,6 +42,57 @@
     padding-bottom: 0;
 }
 
+.expeditionsContainer {
+    display: grid;
+    grid-template-rows: auto auto;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 96%;
+    height: auto;
+}
+
+.expeditions {
+    text-align: center;
+}
+
+.expedition {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr); /* default: 1 column (stacked) */
+    gap: 2rem;
+    align-items: start;
+    max-width: 100%;
+    text-align: center;
+}
+
+.expeditionImg {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+/* On larger screens, switch to 2 columns */
+@media (min-width: 768px) {
+  .expedition {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: center; /* optional: vertically align image + text */
+  }
+}
+
+.expeditionButton {
+    margin: 2%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 0;
+}
+
 .impact {
     text-align: center;
 }
@@ -49,24 +102,31 @@
 }
 
 .impactContainer {
+    color: white;
     display: grid;
     grid-template-rows: auto auto auto;
     padding-left: 2%;
     padding-right: 2%;
     width: 96%;
     height: auto;
-    background-color: white;
 }
 
 .projectsContainer {
-    display: grid;
-    grid-template-columns: 33% 34% 33%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .project {
+    flex: 1;
+    margin: 2%;
+    background-color: white;
+    border-radius: 20px;
     text-align:center;
     display: grid;
     grid-template-rows: auto auto auto;
+    font-size: 24px;
+    max-width: 300px;
 }
 
 .projectImg {
@@ -81,10 +141,6 @@
     height: fit-content;
 }
 
-.topContainer {
-    grid-template-rows: auto auto;
-}
-
 @media screen and (min-aspect-ratio: 12/9) {
     .topContainer {
         display: grid;
@@ -96,5 +152,43 @@
     .topContainer {
         display: grid;
         grid-template-rows: auto auto;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .topPara, .bottomPara {
+        font-size: 16px;
+    }
+
+    .expeditions {
+        font-size: 18px;
+    }
+
+    .expeditionsDesc {
+        font-size: 16px;
+    }
+
+    .expeditionTitle {
+        font-size: 18px;
+    }
+
+    .expeditionDesc {
+        font-size: 14px;
+    }
+
+    .impact {
+        font-size: 20px;
+    }
+    .impactDesc {
+        font-size: 16px;
+    }
+
+    .project {
+        font-size: 20px;
+    }
+
+    .projectDesc {
+        font-size: 12px;
     }
 }
